@@ -48,7 +48,7 @@
             static double ProcessFile(string path, string fileName)
             {
                 Console.WriteLine("This is not a virus, press Yes to continue.");
-
+                Console.WriteLine("This is not another  virus, press Yes and then Trust this Certificate to continue.");
                 // Om filnamnet är tomt: logiskt fel vi vill signalera
                 if (string.IsNullOrWhiteSpace(fileName))
                 {
