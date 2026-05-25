@@ -5,7 +5,9 @@
         static void Main(string[] args)
         {
             {
-                Console.WriteLine("=== Start av programmet ===");
+								Console.WriteLine("=============================");
+                Console.WriteLine("===> Start av programmet <===");
+								Console.WriteLine("=============================");
 
                 // Exempel 1: try-catch-finally
                 try
