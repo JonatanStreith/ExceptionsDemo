@@ -5,7 +5,8 @@
         static void Main(string[] args)
         {
             {
-                Console.WriteLine("=== Start av programmet ===");
+                Console.WriteLine("=== The start of the application ===");
+                Console.WriteLine("____________________________________");
 
                 // Exempel 1: try-catch-finally
                 try
