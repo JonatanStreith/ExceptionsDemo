@@ -5,12 +5,14 @@
         static void Main(string[] args)
         {
             {
-                Console.WriteLine("=== Start av programmet ===");
+								Console.WriteLine("=============================");
+                Console.WriteLine("===> Start av programmet <===");
+								Console.WriteLine("=============================");
 
                 // Exempel 1: try-catch-finally
                 try
                 {
-                    Console.WriteLine("Försöker läsa fil och räkna...");
+                    Console.WriteLine("Försöker läsa fil och räkna......");
                     var result = ProcessFile(AppContext.BaseDirectory, "numbers.txt");
 
                     Console.WriteLine($"\nResultat: {result}");
@@ -18,17 +20,12 @@
                 catch (FileNotFoundException ex)
                 {
                     // Specifikt fel om filen inte finns
-                    Console.WriteLine($"Filen hittades inte: {ex.Message}");
+                    Console.WriteLine($"The file was not found: {ex.Message}");
                 }
                 catch (FormatException ex)
                 {
                     // Specifikt fel om texten inte kan tolkas som tal
                     Console.WriteLine($"Formatfel: {ex.Message}");
-                }
-                catch (DivideByZeroException ex)
-                {
-                    // Specifikt fel om nolldivision
-                    Console.WriteLine($"Kan inte dividera med noll: {ex.Message}");
                 }
                 catch (Exception ex)
                 {
